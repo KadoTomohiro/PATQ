@@ -14,6 +14,7 @@
       'PATQ.components.about',
       'PATQ.components.contact',
       'PATQ.components.answer',
+      'PATQ.components.create',
     ])
     .controller('AppController', AppController);
 
@@ -23,6 +24,7 @@
     { path: '/about',   component: 'about' },
     { path: '/contact', component: 'contact' },
     { path: '/answer', component: 'answer' },
+    { path: '/create', component: 'create' },
   ];
 
   AppController.$inject = [];
