@@ -3,7 +3,7 @@
  *
  * @module PATQ
  */
-(function () {
+(function() {
   'use strict';
 
   angular
@@ -12,7 +12,8 @@
       'PATQ.config',
       'PATQ.components.home',
       'PATQ.components.about',
-      'PATQ.components.contact'
+      'PATQ.components.contact',
+      'PATQ.components.answer',
     ])
     .controller('AppController', AppController);
 
@@ -20,10 +21,11 @@
     { path: '/',       redirectTo: '/home' },
     { path: '/home',    component: 'home' },
     { path: '/about',   component: 'about' },
-    { path: '/contact', component: 'contact' }
+    { path: '/contact', component: 'contact' },
+    { path: '/answer', component: 'answer' },
   ];
 
-  AppController.$inject = [];  
+  AppController.$inject = [];
 
   /**
    * AppController
